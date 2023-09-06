@@ -1,0 +1,1087 @@
+/*이랜드 초이스체*/
+/*@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+/*이랜드 나이스체*/
+/*@font-face {
+    font-family: 'ELAND_Nice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@charset "utf=8";
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #232325;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'ELAND_Choice_M';
+    font-size: 14px;
+    line-height: 20px;
+    color: #232325;
+    min-width: 1450px;
+}
+
+/*---헤더---*/
+
+#header {
+    box-shadow: 5px 5px 5px rgba(244, 133, 33, 0.1);
+    position: relative;
+
+}
+
+#header_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#header .gnb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+    height: 70px;
+    width: 100%;
+}
+
+#header .gnb ul {
+    display: flex;
+    width: 50%;
+
+}
+
+#header .gnb ul li {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.gnb h1 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+
+.left1 {
+    padding-left: 20px;
+}
+
+.left2 {
+    padding-left: 260px;
+}
+
+.left3 {
+    padding-left: 255px;
+    box-sizing: border-box;
+}
+
+/*탑버튼------------------------------------------------------------------------*/
+.top_button {
+    text-align: center;
+    position: fixed;
+    right: 3%;
+    top: 35%;
+    z-index: 50;
+}
+
+.top_button ul li a {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.top_button ul li a img {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.button {
+    display: block;
+    background-color: #2A100B;
+    border-radius: 50%;
+    width: 87px;
+    height: 87px;
+}
+
+.button:hover {
+    background-color: #F48521
+}
+
+/*메인배너-------------------------------------------------------------------------*/
+
+.mainbanner {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.mb_next,
+.mb_prev {
+    color: #2A100B;
+}
+
+.mb_pag span {
+    background-color: #2A100B;
+    text-align: center;
+}
+
+#VALUATION {
+    width: 1320px;
+    margin: 20px auto;
+    padding-bottom: 200px;
+}
+
+#VALUATION h3,
+h1,
+h4 {
+    text-align: center;
+}
+
+#VALUATION h3 {
+    font-size: 22px;
+    line-height: 26px;
+    padding-top: 220px;
+    word-spacing: 7px;
+    font-weight: 400;
+}
+
+#VALUATION h1 {
+    font-size: 65px;
+    line-height: 75px;
+    letter-spacing: 10px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.orange {
+    color: #F48521;
+}
+
+#VALUATION h4 {
+    color: #c6c2c2;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding-bottom: 60px;
+}
+
+.FLEX1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.FLEX1 div {
+    text-align: center;
+    padding: 0 80px;
+}
+
+.line {
+    width: 440px;
+    border-right: #c6c2c2 dotted 2px;
+}
+
+.line2 {
+    width: 440px;
+}
+
+.FLEX1 h5 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.FLEX1 p {
+    color: #868484;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/*--메뉴------------------------------------------------------------------------------------*/
+#MENU>h1 {
+    font-family: 'ELAND_Nice_M';
+    font-size: 115px;
+    line-height: 120px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 40px;
+}
+
+
+
+
+#KAAPIS h1 {
+    font-family: 'ELAND_Nice_M';
+    padding-top: 10px;
+    font-size: 85px;
+    line-height: 120px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 40px;
+}
+
+@font-face {
+    font-family: 'ELAND_Nice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#MENU h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 90px;
+    margin-bottom: 100px;
+}
+
+.menubg {
+    width: 276px;
+    height: 372px;
+    background: url(../images/menu/menubg.jpg) no-repeat center top fixed;
+    position: relative;
+    transform: scale(0.5);
+    transform-origin: bottom;
+
+}
+
+.menubg>img {
+    position: absolute;
+    top: 90px;
+    left: 20%;
+}
+
+
+.menu_slide .swiper-wrapper {
+    padding-bottom: 150px;
+}
+
+.menu_slide .swiper-wrapper .menubg .menu1 {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.menu2 {
+    padding-left: 30px;
+}
+
+.menu3 {
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.menu4 {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.menu5 {
+    padding-left: 30px;
+}
+
+.menu6 {
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+.menu7 {
+    padding-top: 35px;
+    padding-right: 3px;
+    padding-left: 30px;
+}
+
+.menu8 {
+    padding-top: 88px;
+    padding-left: 2px;
+    padding-left: 35px;
+}
+
+.menu9 {
+    padding-top: 40px;
+    padding-left: 3px;
+    padding-left: 30px;
+}
+
+.menu10 {
+    padding-left: 15px;
+    padding-left: 40px;
+}
+
+.menu11 {
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-left: 30px;
+}
+
+.menu12 {
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu13 {
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-left: 35px;
+}
+
+.food1,
+.food2,
+.food3,
+.food4,
+.food5 {
+    padding-top: 40px;
+}
+
+
+.food7 {
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.food6 {
+    padding-left: 15px;
+    padding-top: 25px;
+}
+
+.food4 {
+    padding-left: 10px;
+}
+
+.food5 {
+    padding-left: 5px;
+}
+
+
+.menubg .menu_text {
+    width: 1000px;
+    position: absolute;
+    top: 80px;
+    right: -1010px;
+    display: none;
+}
+
+
+.menubg h6 {
+    position: absolute;
+    top: 400px;
+    right: 110px;
+    font-size: 20px;
+    font-weight: 400;
+    display: none;
+    border-bottom: #C85227 5px solid;
+    padding-bottom: 5px;
+}
+
+
+.swiper-slide-active.menubg h6 {
+    display: block;
+}
+
+.swiper-slide-active.menubg .menu_text {
+    display: block;
+}
+
+.swiper-slide-active {
+    transform: scale(1.0);
+}
+
+.menubg .menu_text p:first-child {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.menu_slide .swiper-pagination {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 50px;
+    transform: translateX(-50%);
+    width: 1320px;
+}
+
+.menu_slide .swiper-button-prev {
+    left: 50%;
+    transform: translate(-186px, -30px);
+    background: url(../images/icon/left_.png) no-repeat;
+    background-size: 100%;
+}
+
+.menu_slide .swiper-button-next {
+    right: 50%;
+    transform: translate(186px, -30px);
+    background: url(../images/icon/right_.png) no-repeat;
+    background-size: 100%;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+
+.menu_slide .M_pag {
+    height: 1px;
+}
+
+.menu_slide .M_pag span {
+    background-color: #3e3e3e;
+}
+
+
+
+#short_banner {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+/*커스토머 인터랙션---------------------------------------------------*/
+#CUSTOMER .title h1 {
+    font-family: 'ELAND_Nice_M';
+    font-size: 93px;
+    line-height: 120px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#CUSTOMER {
+    background: url(../images/background/store.png) no-repeat center top;
+    background-size: cover;
+    height: 1474px;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    padding-top: 50px;
+}
+
+
+
+.C_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.C_left {
+    width: 50%;
+    position: relative;
+}
+
+
+.sub_title {
+    margin-top: 130px;
+    text-align: right;
+    padding-right: 100px;
+
+}
+
+.sub_title h3,
+.sub_title2 h3 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.sub_title p a,
+.sub_title2 p a {
+    color: #F48521;
+    font-size: 16px;
+    border: 1px #F48521 solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+
+.C_right {
+    width: 50%;
+    position: relative;
+}
+
+.sub_title2 {
+    margin-top: 130px;
+    text-align: left;
+
+}
+
+.sub_title2>h3 {
+    color: #fff;
+}
+
+.top_gra {
+    position: absolute;
+    top: 0px;
+    z-index: 40;
+}
+
+.bottom_gra {
+    position: absolute;
+    bottom: 0px;
+    z-index: 50;
+}
+
+.swiper-pagination .event_bn {
+    margin-top: 130px;
+    margin-left: 140px;
+}
+
+.event_text {
+    margin-top: 10px;
+    margin-left: 270px;
+}
+
+.event_text>h4 {
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.event_slide {
+    width: 502px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 리뷰 슬라이드----------------------------------------------*/
+#review {
+    width: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+    z-index: 20;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+.review_inner {
+    height: 3600px;
+    /*ul길이의 두배!*/
+    animation: rotate 10s infinite linear;
+}
+
+.review_inner ul {
+    display: flex;
+    flex-direction: column;
+    height: 1800px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.review_inner ul li {
+    width: 368px;
+    height: 161px;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요!*/
+
+.review_inner ul li:nth-child(1) {
+    padding-left: 150px;
+}
+
+.review_inner ul li:nth-child(2) {
+    padding-left: 450px;
+}
+
+.review_inner ul li:nth-child(3) {
+    padding-left: 150px;
+}
+
+.review_inner ul li:nth-child(4) {
+    padding-left: 450px;
+}
+
+.review_inner ul li:nth-child(5) {
+    padding-left: 150px;
+}
+
+.review_inner ul li:nth-child(6) {
+    padding-left: 450px;
+}
+
+.review_inner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -1800px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+/*더보기버튼 물결호버----------------------------------------------------------------*/
+.sub_title p,
+.sub_title2 p,
+.menubg .slide_hover {
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.menubg .slide_hover a {
+    padding-left: 10px;
+}
+
+.menubg .slide_hover {
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.sub_title p a:hover img,
+.sub_title2 p a:hover img,
+.menubg .slide_hover a:hover img {
+    transform: translateX(16px);
+    transition: all 0.5s;
+}
+
+.sub_title p a:hover,
+.sub_title2 p a:hover,
+.menubg .slide_hover a:hover {
+    width: 100px;
+    transition: all 0.5s;
+    border: #2A100B 1px solid;
+    color: white;
+}
+
+.sub_title p a,
+.sub_title2 p a,
+.menubg .slide_hover a {
+    transition: all 0.5s;
+    padding-right: 10px;
+
+}
+
+.sub_title p a img,
+.sub_title2 p a img,
+.menubg .slide_hover a img {
+    transition: all 0.5s;
+}
+
+.btn-bubble {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    width: 75px;
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 20px !important;
+    -webkit-transition: color 0.45s;
+    transition: color 0.45s;
+    font-weight: 500;
+    color: #F48521;
+    font-size: 16px;
+    border: 2px #F48521 solid;
+    padding-top: 2px;
+}
+
+
+.btn-bubble .btn-bubble-inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-bubble .btn-bubble-itembox {
+    position: relative;
+    display: block;
+    height: 100%;
+    -webkit-filter: url(#bubble-start);
+    filter: url(#bubble-start);
+}
+
+
+
+
+@supports ((-webkit-filter: url("#bubble-start")) or (filter: url("#bubble-start"))) .btn-bubble .btn-bubble-item {
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+    transform: translate3d(0, 150%, 0) scale(1.4);
+}
+
+.btn-bubble .btn-bubble-item {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #2A100B;
+    border-radius: 100%;
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    -webkit-transition: -webkit-transform 0.45s;
+    transition: -webkit-transform 0.45s;
+    transition: transform 0.45s;
+    transition: transform 0.45s, -webkit-transform 0.45s;
+    padding-top: 2px;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(1) {
+    left: 0%;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(2) {
+    left: 30%;
+    -webkit-transition-delay: 0.08s;
+    transition-delay: 0.08s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(3) {
+    left: 60%;
+    -webkit-transition-delay: 0.16s;
+    transition-delay: 0.16s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(4) {
+    left: 90%;
+    -webkit-transition-delay: 0.24s;
+    transition-delay: 0.24s;
+}
+
+
+.btn-bubble:hover .btn-bubble-item {
+    transform: translateZ(0) scale(1.7);
+}
+
+
+/*KAAPIS-------------------------------------------------------------*/
+
+#KAAPIS {
+    width: 1320PX;
+    margin: 0 auto;
+
+}
+
+.KAAPIS_BG {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+#KAAPIS h1 {
+    margin-left: 0;
+    margin-top: 140px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.KAAPIS_SBG {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+
+}
+
+.KAAPIS_SBG>* {
+    margin: 3px;
+}
+
+.KAAPIS_BBG>* {
+    width: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding-bottom: 6px;
+}
+
+
+
+
+/*--제이쿼리 호버-------------------------------------------*/
+.on,
+.on2 {
+    position: relative;
+}
+
+.on3 {
+    position: relative;
+}
+
+.on_hover,
+.on2_hover {
+    position: absolute;
+    width: 284px;
+    height: 284px;
+    top: 0px;
+    left: 0px;
+    display: none;
+    /* background-color: #F48521; */
+    background-color: rgba(244, 133, 33, 0.8);
+    color: #fff;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.on3>img {
+    height: 575px;
+}
+
+.on3_hover {
+    position: absolute;
+    width: 575px;
+    height: 575px;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-color: rgba(244, 133, 33, 0.8);
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.on_hover p:first-child,
+.on2_hover p:first-child {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.on3_hover p:first-child {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 80px;
+    padding-bottom: 130px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.on_hover p:nth-child(3) a img,
+.on2_hover p:nth-child(3) a img {
+    padding-right: 50px;
+    margin-top: 20px;
+    transition: all 1s;
+}
+
+.on3_hover p:nth-child(3) a img {
+    padding-right: 80px;
+    margin-top: 40px;
+    transition: all 1.2s;
+}
+
+.on_hover p:nth-child(3) a img:hover,
+.on2_hover p:nth-child(3) a img:hover {
+    transition: all 1s;
+    transform: translateX(50px);
+}
+
+.on3_hover p:nth-child(3) a img:hover {
+    transition: all 1.2s;
+    transform: translateX(80px);
+}
+
+.menu_hover {
+    width: 1920px;
+    height: 220px;
+    box-shadow: 5px 5px 5px rgba(244, 133, 33, 0.1);
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    z-index: 4;
+}
+
+.menu_hover_inner {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.menu_hover1 ul:nth-child(1) {
+    padding-left: 285px;
+}
+
+.menu_hover1 ul:nth-child(2) {
+    padding-left: 205px;
+}
+
+.menu_hover_inner>p {
+    visibility: hidden;
+}
+
+.menu_hover1,
+.menu_hover2 {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.menu_hover2 ul:nth-child(1) {
+    padding-left: 200px;
+}
+
+.menu_hover2 ul:nth-child(2) {
+    padding-left: 220px;
+}
+
+.menu_hover2 ul:nth-child(2) li:nth-child(1) {
+    padding-left: 15px;
+}
+
+.menu_hover2 ul:nth-child(2) li:nth-child(2) {
+    width: 130px;
+}
+
+.menu_hover_inner ul li {
+    width: 100px;
+    padding: 20px 0;
+}
+
+.menu_hover1>ul>li>a:hover,
+.menu_hover2>ul>li>a:hover {
+    color: #f8aa66;
+}
+
+.solid {
+    width: 100%;
+    margin: auto;
+    height: 5px;
+    background: #f8aa66;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+}
+
+.menu_hover1>ul>li>a:hover .solid,
+.menu_hover2>ul>li>a:hover .solid {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*풋터--------------------------------------------------------------------*/
+#FOOTER {
+    background-color: #3D3F3A;
+}
+
+#FOOTER .FOOTER_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#FOOTER .FOOTER_inner div:nth-child(2) {
+    display: flex;
+}
+
+#FOOTER .FOOTER_inner ul {
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    border-bottom: #F48521 solid 2px;
+}
+
+#FOOTER .FOOTER_inner ul li {
+    padding-right: 20px;
+}
+
+#FOOTER .FOOTER_inner ul li a {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+#FOOTER .FOOTER_inner ul li a:hover {
+    color: #F48521;
+}
+
+
+#FOOTER .FOOTER_inner ol li {
+    font-size: 12px;
+    padding: 5px 0;
+    color: #fff;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+#FOOTER .FOOTER_inner ol {
+    padding-bottom: 60px;
+}
+
+#FOOTER .FOOTER_inner .sns_button {
+    padding-left: 700px;
+}
+
+
+.sns_button p {
+    position: relative;
+    padding-left: 10px;
+
+}
+
+.sns_hover1,
+.sns_hover2,
+.sns_hover3,
+.sns_hover4 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+}
+
+/*?a태그에 백그라운드 호버 적용 안됨, p태그 이용하여 호버가 되면 a링크 연결이 안됨.*/
