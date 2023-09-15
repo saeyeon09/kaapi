@@ -57,52 +57,33 @@ body {
     box-shadow: 5px 5px 5px rgba(244, 133, 33, 0.1);
     position: relative;
 
+    padding: 15px 0;
+    height: 70px;
+    width: 100%;
 }
 
 #header_inner {
     width: 1320px;
     margin: 0 auto;
-}
-
-#header .gnb {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 15px 0;
-    position: relative;
-    height: 70px;
-    width: 100%;
 }
 
-#header .gnb ul {
-    display: flex;
-    width: 50%;
 
-}
 
-#header .gnb ul li {
+
+#header_inner ul li {
     font-weight: bold;
     font-size: 17px;
 }
 
-.gnb h1 {
-    position: absolute;
+#header_inner h1 {
     margin-top: 5px;
 }
 
 
-.left1 {
-    padding-left: 20px;
-}
 
-.left2 {
-    padding-left: 260px;
-}
-
-.left3 {
-    padding-left: 255px;
-    box-sizing: border-box;
-}
 
 /*탑버튼------------------------------------------------------------------------*/
 .top_button {
@@ -462,6 +443,11 @@ h4 {
 
 #short_banner {
     margin-top: 100px;
+    width: 100%;
+}
+
+#short_banner img {
+    width: 100%;
 }
 
 
@@ -928,69 +914,68 @@ h4 {
 }
 
 .menu_hover {
-    width: 1920px;
+    width: 100%;
     height: 220px;
     box-shadow: 5px 5px 5px rgba(244, 133, 33, 0.1);
     display: none;
     position: absolute;
-    top: 0px;
+    top: 100px;
     left: 0px;
-    position: relative;
     z-index: 4;
+    background-color: #fff;
 }
 
 .menu_hover_inner {
+    width: 1320px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    background-color: #fff;
-    text-align: center;
+    justify-content: space-between;
     text-transform: uppercase;
 }
 
-
-.menu_hover1 ul:nth-child(1) {
-    padding-left: 285px;
+.menu_hover1 ul {
+    margin: auto;
+    text-align: center;
 }
 
-.menu_hover1 ul:nth-child(2) {
-    padding-left: 205px;
+.menu_hover2 ul {
+    margin: auto;
+    text-align: center;
 }
 
-.menu_hover_inner>p {
-    visibility: hidden;
+.menu_hover1 {
+    text-align: left;
 }
+
+.menu_hover2 {
+    text-align: right;
+}
+
 
 .menu_hover1,
 .menu_hover2 {
-    width: 50%;
+    width: 35%;
     display: flex;
     justify-content: left;
 }
 
-.menu_hover2 ul:nth-child(1) {
-    padding-left: 200px;
-}
-
-.menu_hover2 ul:nth-child(2) {
-    padding-left: 220px;
-}
-
-.menu_hover2 ul:nth-child(2) li:nth-child(1) {
-    padding-left: 15px;
-}
-
-.menu_hover2 ul:nth-child(2) li:nth-child(2) {
-    width: 130px;
-}
 
 .menu_hover_inner ul li {
-    width: 100px;
     padding: 20px 0;
 }
 
 .menu_hover1>ul>li>a:hover,
 .menu_hover2>ul>li>a:hover {
     color: #f8aa66;
+}
+
+.menu_hover2 ul {
+    width: 50%;
+}
+
+.menu_hover1>ul>li>a,
+.menu_hover2>ul>li>a {
+    position: relative;
 }
 
 .solid {
@@ -1003,6 +988,9 @@ h4 {
     transform: scaleX(0);
     transition-property: opacity, transform;
     transition-duration: 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }
 
 .menu_hover1>ul>li>a:hover .solid,
