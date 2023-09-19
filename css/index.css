@@ -934,12 +934,12 @@ h4 {
 }
 
 .menu_hover1 ul {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
 .menu_hover2 ul {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1072,4 +1072,22 @@ h4 {
     padding-left: 10px;
 }
 
-/*?a태그에 백그라운드 호버 적용 안됨, p태그 이용하여 호버가 되면 a링크 연결이 안됨.*/
+
+/*팝업창------------------------------------------*/
+.popup {}
+
+.popup_img {
+    position: fixed;
+    z-index: 100;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.close {
+    position: fixed;
+    z-index: 110;
+    top: 67.5%;
+    left: 57.8%;
+    transform: translateX(-50%);
+}
