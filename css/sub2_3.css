@@ -319,12 +319,9 @@ body {
 .title {
     margin-bottom: 60px;
     text-align: center;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 #MD .Md_inner .product,
-#MD .Md_inner .product2,
 #MD2 .Md_inner .product {
     display: flex;
     justify-content: space-between;
@@ -347,10 +344,11 @@ body {
     text-align: center;
     margin-bottom: 30px;
     z-index: 5;
+
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     display: flex;
-
     justify-content: flex-end;
 }
 
@@ -360,7 +358,6 @@ body {
 }
 
 #MD .Md_inner .product .productbox,
-#MD .Md_inner .product2 .productbox,
 #MD2 .Md_inner .product .productbox {
     width: 290px;
     height: 368px;
@@ -378,8 +375,7 @@ body {
     overflow: hidden;
 }
 
-.product div img,
-.product2 div img {
+.product div img {
     transform: translate(-50%, -60%) scale(0.6);
     position: absolute;
     top: 50%;
@@ -451,13 +447,11 @@ body {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
 }
 
-.product .productbox:hover img,
-.product2 .productbox:hover img {
+.product .productbox:hover img {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.product .productbox:hover .name,
-.product2 .productbox:hover .name {
+.product .productbox:hover .name {
     position: absolute;
     top: 0px;
     left: 20px;
@@ -480,7 +474,7 @@ body {
     padding: 10px;
 }
 
-#MD3 .Md_inner .product2 .productbox .p_hover1 .orange {
+#MD3 .Md_inner .product .productbox .p_hover1 .orange {
     height: 110px;
 }
 
