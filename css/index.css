@@ -361,7 +361,7 @@ h4 {
 }
 
 
-.menubg .menu_text {
+.menubg>.menu_text {
     width: 1000px;
     position: absolute;
     top: 80px;
@@ -373,14 +373,19 @@ h4 {
 .menubg h6 {
     position: absolute;
     top: 400px;
-    right: 110px;
+    right: 50%;
+    transform: translateX(50%);
     font-size: 20px;
     font-weight: 400;
     display: none;
-    border-bottom: #C85227 5px solid;
     padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
 }
 
+.menubg h6 span {
+    border-bottom: #C85227 5px solid;
+}
 
 .swiper-slide-active.menubg h6 {
     display: block;
@@ -390,9 +395,37 @@ h4 {
     display: block;
 }
 
+
+@keyframes move2 {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+
 .swiper-slide-active {
     transform: scale(1.0);
+
 }
+
+.swiper-slide-active .food,
+.swiper-slide-active .food1 {
+    animation: move2 1.5s linear infinite alternate;
+}
+
+.menubg .food,
+.menubg .food1 {
+    padding-top: 50px;
+}
+
+.menubg .food1 {
+    padding-left: 15px;
+}
+
 
 .menubg .menu_text p:first-child {
     font-size: 16px;
@@ -438,6 +471,32 @@ h4 {
 .menu_slide .M_pag span {
     background-color: #3e3e3e;
 }
+
+
+.swiper-wrapper div:nth-child(1) img:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.swiper-wrapper div:nth-child(1) img:nth-child(1):hover {
+    transform: rotate(40deg);
+}
+
+.hover1 .swiper-slide-active>img {
+    transform-origin: 70%;
+}
+
+.hover1 .swiper-slide-active>img:hover {
+    transform: rotate(-10deg)
+}
+
+
+
+
+
+
+
+
+
 
 
 
