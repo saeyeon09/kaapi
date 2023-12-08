@@ -412,8 +412,8 @@ h4 {
 
 }
 
-.swiper-slide-active .food,
-.swiper-slide-active .food1 {
+.menubg .food,
+.menubg .food1 {
     animation: move2 1.5s linear infinite alternate;
 }
 
@@ -473,20 +473,14 @@ h4 {
 }
 
 
-.swiper-wrapper div:nth-child(1) img:nth-child(1) {
-    transform: rotate(0deg);
-}
 
-.swiper-wrapper div:nth-child(1) img:nth-child(1):hover {
-    transform: rotate(40deg);
-}
 
-.hover1 .swiper-slide-active>img {
+.hover1 .swiper-slide>img {
     transform-origin: 70%;
 }
 
-.hover1 .swiper-slide-active>img:hover {
-    transform: rotate(-10deg)
+.hover1 .swiper-slide>img:hover {
+    transform: rotate(-10deg);
 }
 
 
@@ -1133,20 +1127,18 @@ h4 {
 
 
 /*팝업창------------------------------------------*/
-.popup {}
-
-.popup_img {
+.popup {
+    position: relative;
     position: fixed;
     z-index: 100;
-    top: 25%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .close {
-    position: fixed;
+    position: absolute;
     z-index: 110;
-    top: 67.5%;
-    left: 57.8%;
-    transform: translateX(-50%);
+    bottom: 0%;
+    right: 0%;
 }
