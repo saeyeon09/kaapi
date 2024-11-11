@@ -26,7 +26,7 @@
                     <li>Menu</li>
                 </ul>
             </div>
-            <h1><a href="./index.html"><img src="./images/logo/logo2.jpg" alt="카아피로고"></a></h1>
+            <h1><a href="./index.html"><img src="./images/logo/logo.png" alt="카아피로고"></a></h1>
             <div class="menu_hover2">
 
                 <ul>
@@ -53,12 +53,12 @@
                 <!-- <p><img src="./images/logo/logo.jpg" alt="숨김이미지"></p> -->
                 <div class="menu_hover2">
                     <ul>
-                        <li><a href="#">이벤트 & SNS<div class="solid"></div></a></li>
-                        <li><a href="#">고객의 소리<div class="solid"></div></a></li>
+                        <li><a href="./sub3_1.html">이벤트 & SNS<div class="solid"></div></a></li>
+                        <li><a href="./sub3_2.html">고객의 소리<div class="solid"></div></a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">경쟁력<div class="solid"></div></a></li>
-                        <li><a href="#">가맹절차 & 가맹문의<div class="solid"></div></a></li>
+                        <li><a href="./sub4_1.html">경쟁력<div class="solid"></div></a></li>
+                        <li><a href="./sub4_2.html">가맹절차 & 가맹문의<div class="solid"></div></a></li>
                     </ul>
                 </div><!--menu_hover2-->
             </div><!--menu_hover_inner-->
@@ -67,9 +67,9 @@
 
     <div class="top_button">
         <ul>
-            <li><a class="button" href="#"><img src="././images/icon/button1.png" alt="탑버튼1"><br>
+            <li><a class="button" href="./sub4_2.html"><img src="././images/icon/button1.png" alt="탑버튼1"><br>
                     가맹문의</a></li>
-            <li><a class="button" href="#"><img src="././images/icon/button2.png" alt="탑버튼2"><br>
+            <li><a class="button" href="./sub3_2.html"><img src="././images/icon/button2.png" alt="탑버튼2"><br>
                     고객상담</a></li>
             <li><a class="button" href="#"><img src="././images/icon/button3.png" alt="탑버튼3"><br>
                     TOP</a></li>
@@ -85,9 +85,15 @@
 
     <div id="menubar">
         <ul>
-            <li><a href="#core_value">about us</a></li>
-            <li><a href="#bi">bi</a></li>
-            <li><a href="#head_office">오시는 길</a></li>
+            <a href="#core_value">
+                <li>ABOUT US</li>
+            </a>
+            <a href="#bi">
+                <li>BI</li>
+            </a>
+            <a href="#head_office">
+                <li>오시는 길</li>
+            </a>
         </ul>
     </div><!--menubar-->
 
@@ -241,10 +247,10 @@
 
         /*헤더메뉴호버*/
         $("#header").hover(function () {
-            $(".menu_hover").show();
+            $(".menu_hover").stop().slideDown(400);
         },
             function () {
-                $(".menu_hover").hide();
+                $(".menu_hover").stop().slideUp(400);
             }
         );
 
