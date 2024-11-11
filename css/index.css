@@ -49,6 +49,7 @@ body {
     line-height: 20px;
     color: #232325;
     min-width: 1450px;
+    width: 100vw;
 }
 
 /*---헤더---*/
@@ -56,32 +57,36 @@ body {
 #header {
     box-shadow: 5px 5px 5px rgba(244, 133, 33, 0.1);
     position: relative;
-
     padding: 15px 0;
     height: 70px;
     width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: #fff;
+    display: block;
 }
 
 #header_inner {
     width: 1320px;
     margin: 0 auto;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-
-
 #header_inner ul li {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 #header_inner h1 {
     margin-top: 5px;
 }
 
+#header_inner h1 a img {
+    transform: scale(0.25);
+}
 
 
 
@@ -119,9 +124,11 @@ body {
 /*메인배너-------------------------------------------------------------------------*/
 
 .mainbanner {
+    display: block;
     text-align: center;
     position: relative;
     z-index: 3;
+    padding-top: 100px;
 }
 
 .mb_next,
@@ -251,13 +258,14 @@ h4 {
     position: relative;
     transform: scale(0.5);
     transform-origin: bottom;
-
+    background-size: contain;
 }
 
 .menubg>img {
     position: absolute;
-    top: 90px;
-    left: 20%;
+    bottom: 20%;
+    left: 17%;
+    width: 100px;
 }
 
 
@@ -312,8 +320,7 @@ h4 {
 }
 
 .menu10 {
-    padding-left: 15px;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .menu11 {
@@ -324,40 +331,24 @@ h4 {
 
 .menu12 {
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .menu13 {
     padding-top: 50px;
-    padding-left: 5px;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 
-.food1,
-.food2,
-.food3,
-.food4,
-.food5 {
-    padding-top: 40px;
+.menubg>.food {
+    width: 150px;
+    padding-bottom: 20px;
 }
 
+.menubg>.food1 {
+    padding-left: 40px;
+    width: 130px;
+    padding-bottom: 30px;
 
-.food7 {
-    padding-left: 15px;
-    padding-top: 20px;
-}
-
-.food6 {
-    padding-left: 15px;
-    padding-top: 25px;
-}
-
-.food4 {
-    padding-left: 10px;
-}
-
-.food5 {
-    padding-left: 5px;
 }
 
 
@@ -442,14 +433,14 @@ h4 {
 }
 
 .menu_slide .swiper-button-prev {
-    left: 50%;
+    left: 51%;
     transform: translate(-186px, -30px);
     background: url(../images/icon/left_.png) no-repeat;
     background-size: 100%;
 }
 
 .menu_slide .swiper-button-next {
-    right: 50%;
+    right: 51%;
     transform: translate(186px, -30px);
     background: url(../images/icon/right_.png) no-repeat;
     background-size: 100%;
@@ -510,6 +501,19 @@ h4 {
 
 
 /*커스토머 인터랙션---------------------------------------------------*/
+#CUSTOMER::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #eee, #ffffff);
+    /* background-color: #2a2a2a; */
+    z-index: -100;
+}
+
 #CUSTOMER .title h1 {
     font-family: 'ELAND_Nice_M';
     font-size: 93px;
@@ -526,6 +530,8 @@ h4 {
     position: relative;
     overflow: hidden;
 }
+
+
 
 .title {
     padding-top: 50px;
@@ -547,23 +553,23 @@ h4 {
 .sub_title {
     margin-top: 130px;
     text-align: right;
-    padding-right: 100px;
+    padding-right: 50px;
 
 }
 
 .sub_title h3,
 .sub_title2 h3 {
-    font-size: 40px;
+    font-size: 32px;
     padding-bottom: 30px;
 }
 
 .sub_title p a,
 .sub_title2 p a {
     color: #F48521;
-    font-size: 16px;
+    font-size: 14px;
     border: 1px #F48521 solid;
-    border-radius: 20px;
-    padding: 5px 10px;
+    border-radius: 15px;
+    padding: 3px 8px;
 
 }
 
@@ -575,6 +581,7 @@ h4 {
 .sub_title2 {
     margin-top: 130px;
     text-align: left;
+    padding-left: 50px;
 
 }
 
@@ -601,7 +608,7 @@ h4 {
 
 .event_text {
     margin-top: 10px;
-    margin-left: 270px;
+    margin-left: 150px;
 }
 
 .event_text>h4 {
@@ -646,35 +653,36 @@ h4 {
     justify-content: space-around;
 }
 
-.review_inner ul li {
-    width: 368px;
-    height: 161px;
+
+.review_inner ul li img {
+    width: 300px;
 }
+
 
 /*width를 본인에 맞게 수정하여 사용하세요!*/
 
 .review_inner ul li:nth-child(1) {
-    padding-left: 150px;
+    padding-left: 140px;
 }
 
 .review_inner ul li:nth-child(2) {
-    padding-left: 450px;
+    padding-left: 280px;
 }
 
 .review_inner ul li:nth-child(3) {
-    padding-left: 150px;
+    padding-left: 140px;
 }
 
 .review_inner ul li:nth-child(4) {
-    padding-left: 450px;
+    padding-left: 280px;
 }
 
 .review_inner ul li:nth-child(5) {
-    padding-left: 150px;
+    padding-left: 140px;
 }
 
 .review_inner ul li:nth-child(6) {
-    padding-left: 450px;
+    padding-left: 280px;
 }
 
 .review_inner:hover {
@@ -742,7 +750,7 @@ h4 {
 
 .btn-bubble {
     display: inline-block;
-    z-index: 1;
+    z-index: 100;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -1080,7 +1088,7 @@ h4 {
 }
 
 #FOOTER .FOOTER_inner ul li a {
-    font-size: 12px;
+    font-size: 13px;
     color: #fff;
     font-weight: 200;
     padding-left: 10px;
@@ -1092,7 +1100,7 @@ h4 {
 
 
 #FOOTER .FOOTER_inner ol li {
-    font-size: 12px;
+    font-size: 13px;
     padding: 5px 0;
     color: #fff;
     font-weight: 200;
@@ -1104,7 +1112,7 @@ h4 {
 }
 
 #FOOTER .FOOTER_inner .sns_button {
-    padding-left: 700px;
+    padding-left: 600px;
 }
 
 

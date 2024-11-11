@@ -49,6 +49,10 @@ body {
     line-height: 20px;
     color: #232325;
     min-width: 1450px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
 }
 
 /*헤더--------------------------------------------------------------*/
@@ -89,30 +93,53 @@ body {
 /*------------------------------------------------------------------------------헤더 끝*/
 
 /*상단 배경, 메뉴바-----------------------------------------------------------------------------*/
-#menu {
-    height: 280px;
+#subvisual {
     text-align: center;
     z-index: 4;
     padding-top: 100px;
+    box-sizing: border-box;
+    position: relative;
 }
 
-#menu div {
-    background: url(../images/aboutus/titlebg.jpg) no-repeat top center;
+#subvisual div {
+    width: 100%;
+    height: 280px;
+    background: url(../images/background/cafebg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#subvisual div::after {
+    content: '';
     width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#menu div h3 {
-    padding-top: 95px;
+#subvisual h3 {
+    color: #fff;
+    z-index: 100;
+    padding-top: 85px;
     font-size: 30px;
     line-height: 35px;
     font-weight: bold;
+    padding-bottom: 15px;
+    position: relative;
+
+    letter-spacing: 1px;
 }
 
-#menu div h5 {
-    padding-top: 20px;
+#subvisual h5 {
+    color: #fff;
+    z-index: 100;
+    padding-top: 5px;
     font-size: 18px;
     font-weight: 400;
+    position: relative;
+    letter-spacing: 1px;
 }
 
 #menubar {
@@ -139,7 +166,7 @@ body {
     font-size: 20px;
 }
 
-
+#menubar ul a:hover {}
 
 #menubar ul a li:hover {
     color: #fff;
@@ -148,6 +175,7 @@ body {
 
 #menubar ul a li {
     display: inline-block;
+
     padding: 13px 0px 7px 0px;
     width: 220px;
     background-color: white;
@@ -165,9 +193,6 @@ body {
     border-left: #ccc 1px solid;
 }
 
-
-
-
 /*헤더호버--------------------------------------------------------------*/
 .menu_hover {
     width: 100%;
@@ -179,6 +204,7 @@ body {
     left: 0px;
     z-index: 4;
     background-color: #fff;
+    z-index: 100;
 }
 
 .menu_hover_inner {
@@ -256,6 +282,9 @@ body {
     visibility: visible;
 }
 
+/*--------------------------------------------------------//헤더호버------*/
+
+
 /*탑버튼------------------------------------------------------------------------*/
 .top_button {
     text-align: center;
@@ -287,257 +316,103 @@ body {
     background-color: #F48521
 }
 
+/*--------------------------------------------------------------//탑버튼----------*/
 
-/*베스트 메뉴-----------------------------------------------------------------*/
-#best {
-    width: 1280px;
+#container {
+    display: block;
+    position: relative;
+    background-color: #fff;
+
+}
+
+#sub_inner {
+    width: 1200px;
     margin: 0 auto;
-    height: 400px;
+    padding: 80px 0;
+}
+
+#sub_inner .Franchise_title {
     text-align: center;
-    padding-top: 80px;
 }
 
-.bestmenu {
-    padding-top: 100px;
+#sub_inner .Franchise_title h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
-.best_title {
-    display: inline;
-    line-height: 30px;
-    font-size: 30px;
-    border-bottom: #ff9471 15px solid;
+#sub_inner .Franchise_title h1 span {
+    font-weight: 900;
 }
 
-.bestmu_slide p {
+#sub_inner .Franchise_title p {
+    margin-bottom: 20px;
+    color: #c6c2c2;
     font-size: 16px;
     padding-top: 10px;
-    padding-bottom: 70px;
-}
-
-.bestmenu .swiper-button-prev {
-    background: url(../images/icon/left_.png) no-repeat;
-    background-size: 100%;
-    top: 55%;
-    left: 0;
-}
-
-.bestmenu .swiper-button-next {
-    background: url(../images/icon/right_.png) no-repeat;
-    background-size: 100%;
-    top: 55%;
-    right: 0;
-}
-
-.swiper-button-next::after {
-    display: none;
-}
-
-.swiper-button-prev::after {
-    display: none;
-}
-
-.bestmenu .M_pag {
-    height: 1px;
-}
-
-.bestmenu .M_pag span {
-    background-color: #3e3e3e;
-}
-
-.bestmenu .swiper-pagination {
-    top: auto;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1320px;
-
-}
-
-/*푸드---------------------------------------------------------------------------------------------*/
-
-#Food {
-    background: url(../images/menu/bg3.png) left top;
-    background-repeat: no-repeat;
-    height: 119px;
-    margin-top: 200px;
-}
-
-
-.Food_inner {
-    width: 1250px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.product2 div:nth-child(1) .bestone {
-    letter-spacing: 0;
-}
-
-.title h2 {
-    margin-top: 50px;
-    display: inline-block;
-    line-height: 30px;
-    font-size: 30px;
-    padding-bottom: 30px;
-    border-bottom: #ff9471 15px solid;
-}
-
-.title {
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.product {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.productbox .name {
-    padding-bottom: 40px;
-}
-
-.productbox {
-    width: 290px;
-    height: 368px;
-    background-color: #fff;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 30px;
-    z-index: 5;
-    position: relative;
-    overflow: hidden;
-}
-
-
-
-.product .productbox p:last-child {
-    padding-bottom: 60px;
-    box-sizing: border-box;
-}
-
-.product2 {
-    display: flex;
-    justify-content: left;
-}
-
-
-.product div img,
-.product2 div img {
-    transform: translate(-50%, -50%) scale(0.45);
-    /* transform-origin: bottom; */
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.product2 div:first-child {
-    margin-right: 32px;
-}
-
-
-
-.productbox .bestone {
-    background-color: #c9d10b;
-    width: 66px;
-    height: 66px;
-    margin: 0 auto;
-    border-radius: 50%;
-    color: #fff;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 10;
-    font-size: 16px;
-    box-sizing: border-box;
-    padding-top: 25px;
-    padding-left: 5px;
-    letter-spacing: 2px;
     font-weight: 400;
 }
 
 
-.letter {
-    letter-spacing: 0px;
-    padding-right: 3px;
+#sub_inner .Franchise_content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2200px;
+    margin-top: 50px;
 }
 
-
-/*푸드 호버----------------------------------------------------------------*/
-
-
-.p_hover1 {
-    border-radius: 20px;
-    box-sizing: border-box;
-    text-align: center;
+#sub_inner .Franchise_content .left {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    z-index: 5;
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-}
-
-.productbox:hover .p_hover1 {
-    bottom: 0;
+    justify-content: left;
+    line-height: 30px;
+    flex-direction: row;
 
 }
 
-.productbox:hover {
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+#sub_inner .Franchise_content .right {
+    display: flex;
+    justify-content: right;
+    line-height: 30px;
+    flex-direction: row-reverse;
+
 }
 
-.product .productbox:hover img,
-.product2 .productbox:hover img {
-    transform: translate(-50%, -50%) scale(0.8);
+#sub_inner .Franchise_content ul li {
+    width: 600px;
+    height: 350px;
 }
 
-.product .productbox:hover .name,
-.product2 .productbox:hover .name {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.p_hover1 .orange {
+#sub_inner .Franchise_content ul .text {
     background-color: #F48521;
-    border-radius: 0 0 20px 20px;
-    width: 290px;
-    height: 100px;
+    text-align: center;
+    font-size: 15px;
     color: #fff;
+    padding: 40px;
     box-sizing: border-box;
-    z-index: 50;
-    line-height: 25px;
-    text-align: left;
-    padding: 10px;
 }
 
 
-
-
-
-.p_hover>img {
-    transform: scale(0.3);
-    z-index: 40;
+#sub_inner .Franchise_content ul .text img {
+    transform: scale(0.4);
+    opacity: 0.7;
 }
 
+#sub_inner .Franchise_content ul:nth-child(4) .text img {
+    transform: scale(0.44);
+    opacity: 0.7;
+}
+
+#sub_inner .Franchise_content ul:last-child .text img {
+    transform: scale(0.5);
+    opacity: 0.7;
+}
 
 
 /*풋터--------------------------------------------------------------------*/
 #FOOTER {
-    margin-top: 1400px;
+    margin-top: 100px;
     background-color: #3D3F3A;
 }
 
