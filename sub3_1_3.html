@@ -146,13 +146,13 @@
       <ul>
         <a href="./sub3_1.html#EVENT">
           <li>이벤트</li>
-      </a>
-      <a href="./sub3_1.html#SNS">
+        </a>
+        <a href="./sub3_1.html#SNS">
           <li>SNS</li>
-      </a>
-      <a href="./sub3_2.html">
+        </a>
+        <a href="./sub3_2.html">
           <li>고객의 소리</li>
-      </a>
+        </a>
       </ul>
     </div>
     <!--menubar-->
@@ -163,8 +163,11 @@
           <div class="details_center">
             <div class="details_title">
               <ul>
-                <li>[메뉴] 카아피 시그니쳐 메뉴 출시</li>
-                <li>2025.9.1</li>
+                <li style="line-height: 30px">
+                  [시즌메뉴] 겨울시즌메뉴 <br />
+                  레드벨벳 치즈케이크 &레드뱅쇼 발매
+                </li>
+                <li>2025.11 ~ 2026.02</li>
               </ul>
             </div>
             <!--details_title-->
@@ -172,8 +175,8 @@
           <!--details_center//-->
           <div class="details_page">
             <img
-              src="./images/eventpage/page2.jpg"
-              alt="12월_할인쿠폰이벤트_상세페이지"
+              src="./images/eventpage/page3.jpg"
+              alt="겨울시즌메뉴_상세페이지"
             />
           </div>
           <!--details_page-->
@@ -302,4 +305,39 @@
         /*풋터 호버*/
         $('.sns_1').hover(
           function () {
-          
+            $('.sns_hover1').show();
+          },
+          function () {
+            $('.sns_hover1').hide();
+          }
+        );
+        $('.sns_2').hover(
+          function () {
+            $('.sns_hover2').show();
+          },
+          function () {
+            $('.sns_hover2').hide();
+          }
+        );
+        $('.sns_3').hover(
+          function () {
+            $('.sns_hover3').show();
+          },
+          function () {
+            $('.sns_hover3').hide();
+          }
+        );
+        $('.sns_4').hover(
+          function () {
+            $('.sns_hover4').show();
+          },
+          function () {
+            $('.sns_hover4').hide();
+          }
+        );
+      });
+    </script>
+    <script src="./js/event_mouseover.js"></script>
+    <script src="./js/color_toggle.js"></script>
+  </body>
+</html>
